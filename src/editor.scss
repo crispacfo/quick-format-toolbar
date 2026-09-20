@@ -1,0 +1,151 @@
+// Quick Format Toolbar — editor styles.
+// Only the plugin's own elements are styled. The editor's toolbar decides
+// where the toolbar is and how tall its buttons are (32px, "compact");
+// the width setting changes only the width of this plugin's buttons.
+// Editor class names used, for styling only (never for layout or behavior):
+// .components-toolbar-group, .components-button and .has-icon are the
+// public classes of @wordpress/components' ToolbarGroup and Button, always
+// combined with the plugin's own .qft-toolbar class. If they change, the
+// plugin's buttons fall back to the editor's default width.
+
+.qft-toolbar {
+	--qft-cell: 32px;
+	--qft-icon: 24px;
+
+	&.is-density-compact {
+		--qft-cell: 28px;
+		--qft-icon: 20px;
+	}
+
+	&.is-density-comfortable {
+		--qft-cell: 36px;
+	}
+}
+
+// The whole cell is the click target; the icon sits centered inside it.
+.qft-toolbar.components-toolbar-group .components-button.has-icon {
+	justify-content: center;
+	width: var(--qft-cell);
+	min-width: var(--qft-cell);
+	padding-left: 0;
+	padding-right: 0;
+
+	&::before {
+		left: 2px;
+		right: 2px;
+	}
+
+	svg {
+		width: var(--qft-icon);
+		height: var(--qft-icon);
+	}
+}
+
+// Split color button: the main part plus a narrow arrow, read as one control.
+.qft-split {
+	display: flex;
+	align-items: stretch;
+}
+
+// The arrow is drawn small, but stays easy to hit: the whole 24px cell clicks.
+.qft-toolbar.components-toolbar-group .qft-split .components-button.qft-split__toggle {
+	width: 24px;
+	min-width: 24px;
+
+	&::before {
+		left: 0;
+		right: 0;
+	}
+
+	svg {
+		width: 16px;
+		height: 16px;
+	}
+}
+
+.qft-toolbar.components-toolbar-group .qft-split .components-button.qft-split__main {
+	padding-right: 0;
+}
+
+// Popovers.
+.qft-color-popover {
+	width: 248px;
+	padding: 16px;
+}
+
+.qft-color-popover__title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 0 12px;
+	font-size: 11px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.qft-color-popover__custom {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-top: 12px;
+}
+
+.qft-chars {
+	display: grid;
+	grid-template-columns: repeat(10, 28px);
+	gap: 2px;
+	padding: 8px;
+}
+
+.qft-chars .qft-chars__item.components-button {
+	justify-content: center;
+	width: 28px;
+	min-width: 28px;
+	height: 28px;
+	padding: 0;
+	font-size: 16px;
+}
+
+// Settings modal.
+.qft-settings__heading {
+	margin: 24px 0 4px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.qft-settings__help {
+	margin: 0 0 8px;
+	color: #757575;
+}
+
+.qft-settings__sub {
+	margin: 8px 0 0 28px;
+}
+
+.qft-settings__footer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 24px;
+}
+
+// The plugin's foldable parts keep the toolbar's row layout.
+.qft-part {
+	display: flex;
+}
+
+// Invisible, zero-size markers past the end of the plugin's buttons (see
+// useFits.js). Positioned inline from the start, so they need no RTL flip.
+.qft-probe-anchor {
+	position: relative;
+	flex: none;
+	width: 0;
+	align-self: center;
+}
+
+.qft-probe {
+	position: absolute;
+	top: 0;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
