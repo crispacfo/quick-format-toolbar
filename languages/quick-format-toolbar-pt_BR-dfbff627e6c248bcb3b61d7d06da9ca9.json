@@ -1,0 +1,158 @@
+{
+	"translation-revision-date": "2026-09-19 12:00+0000",
+	"generator": "Quick Format Toolbar",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "pt_BR",
+				"plural-forms": "nplurals=2; plural=n > 1;"
+			},
+			"Align text center": [
+				"Centralizar texto"
+			],
+			"Align text left": [
+				"Alinhar texto à esquerda"
+			],
+			"Align text right": [
+				"Alinhar texto à direita"
+			],
+			"Apply color": [
+				"Aplicar cor"
+			],
+			"Block spacing": [
+				"Espaçamento entre blocos"
+			],
+			"Block tools": [
+				"Ferramentas de bloco"
+			],
+			"Border": [
+				"Borda"
+			],
+			"Bulleted list": [
+				"Lista com marcadores"
+			],
+			"Button width": [
+				"Largura dos botões"
+			],
+			"Choose highlight color": [
+				"Escolher cor de destaque"
+			],
+			"Choose text color": [
+				"Escolher cor do texto"
+			],
+			"Clear formatting": [
+				"Limpar formatação"
+			],
+			"Comfortable": [
+				"Confortável"
+			],
+			"Compact": [
+				"Compacta"
+			],
+			"Custom color…": [
+				"Cor personalizada…"
+			],
+			"Done": [
+				"Concluído"
+			],
+			"Experimental": [
+				"Experimental"
+			],
+			"Heading %d": [
+				"Título %d"
+			],
+			"Highlight": [
+				"Destaque"
+			],
+			"Highlight: %s": [
+				"Destaque: %s"
+			],
+			"Inline code": [
+				"Código em linha"
+			],
+			"Insert %s": [
+				"Inserir %s"
+			],
+			"Inspector Shortcuts": [
+				"Atalhos do Inspector"
+			],
+			"Line height": [
+				"Altura da linha"
+			],
+			"Margin": [
+				"Margem"
+			],
+			"More formatting": [
+				"Mais formatação"
+			],
+			"Normal": [
+				"Normal"
+			],
+			"Numbered list": [
+				"Lista numerada"
+			],
+			"Padding": [
+				"Preenchimento"
+			],
+			"Paragraph": [
+				"Parágrafo"
+			],
+			"Paragraph and headings": [
+				"Parágrafo e títulos"
+			],
+			"Quick Format Toolbar": [
+				"Quick Format Toolbar"
+			],
+			"Quote": [
+				"Citação"
+			],
+			"Radius": [
+				"Raio"
+			],
+			"Reset to defaults": [
+				"Restaurar padrões"
+			],
+			"Shown after the editor’s own bold, italic and link buttons. To keep the toolbar at the top of the screen, use the editor’s “Top toolbar” option.": [
+				"Aparecem depois dos botões de negrito, itálico e link do próprio editor. Para manter a barra no topo da tela, use a opção “Barra de ferramentas superior” do editor."
+			],
+			"Shows some dimension, typography and border controls directly in the sidebar, for blocks that support them, instead of behind “+”. Uses an experimental editor feature; takes effect after reloading the editor.": [
+				"Mostra alguns controles de dimensões, tipografia e borda diretamente na barra lateral, nos blocos que os suportam, em vez de atrás do “+”. Usa um recurso experimental do editor; vale depois de recarregar o editor."
+			],
+			"Special characters": [
+				"Caracteres especiais"
+			],
+			"Strikethrough": [
+				"Tachado"
+			],
+			"Subscript": [
+				"Subscrito"
+			],
+			"Superscript": [
+				"Sobrescrito"
+			],
+			"Text alignment": [
+				"Alinhamento do texto"
+			],
+			"Text color": [
+				"Cor do texto"
+			],
+			"Text color: %s": [
+				"Cor do texto: %s"
+			],
+			"Text tools": [
+				"Ferramentas de texto"
+			],
+			"The editor already offers these in its own menus; turn them on for one-click access.": [
+				"O editor já oferece estas em seus próprios menus; ative-as para ter acesso com um clique."
+			],
+			"The height comes from the editor’s toolbar; every button is clickable over its whole area.": [
+				"A altura é a da barra do editor; cada botão é clicável em toda a sua área."
+			],
+			"Underline": [
+				"Sublinhado"
+			]
+		}
+	}
+}
