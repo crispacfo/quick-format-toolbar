@@ -1,6 +1,6 @@
 {
 	"translation-revision-date": "2026-09-19 12:00+0000",
-	"generator": "Quick Format Toolbar",
+	"generator": "EstudoBiblico Quick Format Toolbar",
 	"domain": "messages",
 	"locale_data": {
 		"messages": {
@@ -57,6 +57,9 @@
 			"Done": [
 				"Concluído"
 			],
+			"EstudoBiblico Quick Format Toolbar": [
+				"EstudoBiblico Quick Format Toolbar"
+			],
 			"Experimental": [
 				"Experimental"
 			],
@@ -101,9 +104,6 @@
 			],
 			"Paragraph and headings": [
 				"Parágrafo e títulos"
-			],
-			"Quick Format Toolbar": [
-				"Quick Format Toolbar"
 			],
 			"Quote": [
 				"Citação"

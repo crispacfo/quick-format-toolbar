@@ -88,7 +88,7 @@ export function openDefaultControls( settings ) {
 export function registerInspectorShortcuts() {
 	addFilter(
 		'blocks.registerBlockType',
-		'quick-format-toolbar/inspector-shortcuts',
+		'estudobiblico-quick-format-toolbar/inspector-shortcuts',
 		openDefaultControls
 	);
 }

@@ -28,7 +28,8 @@ import QuickFormatToolbar, {
 	useRegisteredFormats,
 } from './toolbar/QuickFormatToolbar';
 
-export const CONTROLLER_FORMAT = 'quick-format-toolbar/controller';
+export const CONTROLLER_FORMAT =
+	'estudobiblico-quick-format-toolbar/controller';
 
 // Re-renders only when its props change: for the focused rich text that is the
 // format signature, not every keystroke. Each re-render would also redraw the
@@ -111,7 +112,10 @@ const withMultiSelectionToolbar = createHigherOrderComponent(
 
 export function registerControllers() {
 	registerFormatType( CONTROLLER_FORMAT, {
-		title: __( 'Quick Format Toolbar', 'quick-format-toolbar' ),
+		title: __(
+			'EstudoBiblico Quick Format Toolbar',
+			'estudobiblico-quick-format-toolbar'
+		),
 		// Never applied to text: this format only exists for its edit().
 		tagName: 'span',
 		className: 'qft-controller',
@@ -119,7 +123,7 @@ export function registerControllers() {
 	} );
 	addFilter(
 		'editor.BlockEdit',
-		'quick-format-toolbar/multi-selection',
+		'estudobiblico-quick-format-toolbar/multi-selection',
 		withMultiSelectionToolbar
 	);
 }

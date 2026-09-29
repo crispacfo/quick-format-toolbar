@@ -39,7 +39,10 @@ function SettingsMenu() {
 				icon={ formatUnderline }
 				onClick={ () => setIsOpen( true ) }
 			>
-				{ __( 'Quick Format Toolbar', 'quick-format-toolbar' ) }
+				{ __(
+					'EstudoBiblico Quick Format Toolbar',
+					'estudobiblico-quick-format-toolbar'
+				) }
 			</MoreMenuItem>
 			{ isOpen && <SettingsModal onClose={ () => setIsOpen( false ) } /> }
 		</>
@@ -50,5 +53,7 @@ safely( 'preferences', registerDefaults );
 safely( 'inspector shortcuts', registerInspectorShortcuts );
 safely( 'toolbar', registerControllers );
 safely( 'settings', () =>
-	registerPlugin( 'quick-format-toolbar', { render: SettingsMenu } )
+	registerPlugin( 'estudobiblico-quick-format-toolbar', {
+		render: SettingsMenu,
+	} )
 );

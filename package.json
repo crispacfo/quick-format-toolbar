@@ -1,10 +1,8 @@
 {
-	"name": "quick-format-toolbar",
-	"version": "1.0.0",
+	"name": "estudobiblico-quick-format-toolbar",
+	"version": "1.0.1",
 	"private": true,
 	"description": "Classic-editor formatting ergonomics for the block editor.",
-	"author": "Claudio Crispim",
-	"homepage": "https://estudobiblico.org/",
 	"license": "GPL-2.0-or-later",
 	"scripts": {
 		"build": "wp-scripts build",

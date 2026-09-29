@@ -1,10 +1,10 @@
-=== Quick Format Toolbar ===
+=== EstudoBiblico Quick Format Toolbar ===
 Contributors: crispaorg
-Tags: formatting, toolbar, text color, block editor, classic editor
+Tags: formatting, toolbar, text color, block editor, rich text
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ The block editor, with the classic editor's formatting speed: underline, striket
 
 The block editor hides common formatting behind menus. Coloring a few words takes four clicks: More → Highlight → Text → color. Underline has no button at all, and strikethrough, superscript and subscript live in the "More" menu.
 
-Quick Format Toolbar keeps the block editor exactly as it is and puts those tools on the block's own toolbar, right after the editor's Bold, Italic and Link:
+EstudoBiblico Quick Format Toolbar keeps the block editor exactly as it is and puts those tools on the block's own toolbar, right after the editor's Bold, Italic and Link:
 
 `B I Link | U S | A▾ Highlight▾ | x² x₂ | Clear formatting`
 
@@ -23,11 +23,11 @@ Quick Format Toolbar keeps the block editor exactly as it is and puts those tool
 * **Clear formatting** that removes bold, italic, underline, strikethrough, sub/superscript, code, keyboard and colors, and leaves links, footnotes and formats added by other plugins untouched.
 * **Works across blocks**: select text over several paragraphs and format it in one go, undone with a single Undo.
 * **Optional tools**, off by default: inline code, special characters (Ω), and one-click block tools (paragraph/headings, lists, quote, text alignment) through the blocks' own transforms and settings.
-* **Button width** (compact, normal, comfortable) and the tools to show, from the editor's ⋮ menu → Quick Format Toolbar. Settings are saved per user.
+* **Button width** (compact, normal, comfortable) and the tools to show, from the editor's ⋮ menu → EstudoBiblico Quick Format Toolbar. Settings are saved per user.
 
 The toolbar goes wherever the editor puts its block toolbar: next to the block, or at the top of the screen with the editor's own "Top toolbar" option. The plugin does not move or restyle the editor's toolbar.
 
-The editor already has most of these formats; what it lacks is quick access. Quick Format Toolbar adds no new kind of formatting and stores nothing of its own in your content: it puts the editor's own tools one click away, the way the classic editor's toolbar did.
+The editor already has most of these formats; what it lacks is quick access. EstudoBiblico Quick Format Toolbar adds no new kind of formatting and stores nothing of its own in your content: it puts the editor's own tools one click away, the way the classic editor's toolbar did.
 
 Nothing is removed from the editor: the "More" menu, keyboard shortcuts and formats from other plugins keep working. Deactivate the plugin and the editor is back to its defaults; your content is not affected, because every format is saved exactly as the editor saves it.
 
@@ -38,9 +38,9 @@ Off by default. When turned on, some sidebar controls (padding, margin, line hei
 == Installation ==
 
 1. Upload the plugin folder to `/wp-content/plugins/`, or install the ZIP file from Plugins > Add New > Upload Plugin.
-2. Activate Quick Format Toolbar.
+2. Activate EstudoBiblico Quick Format Toolbar.
 3. Open any post or page in the block editor and click into some text: the new buttons appear on the block toolbar, after Bold, Italic and Link.
-4. To choose the tools and the button width, open the editor's ⋮ menu > Quick Format Toolbar.
+4. To choose the tools and the button width, open the editor's ⋮ menu > EstudoBiblico Quick Format Toolbar.
 
 == Frequently Asked Questions ==
 
@@ -78,7 +78,7 @@ No. It runs only in the editor, makes no external requests and sets no cookies.
 
 == Screenshots ==
 
-1. The block toolbar with Quick Format Toolbar: underline, strikethrough, text color, highlight, superscript, subscript and clear formatting.
+1. The block toolbar with EstudoBiblico Quick Format Toolbar: underline, strikethrough, text color, highlight, superscript, subscript and clear formatting.
 2. Picking a new text color from the theme palette.
 3. Settings: button width, text tools, block tools and the experimental Inspector Shortcuts.
 
@@ -93,7 +93,7 @@ The build uses @wordpress/scripts. React and the @wordpress packages are not bun
 
 == Privacy ==
 
-Quick Format Toolbar does not collect personal data, track visitors or call external services. It loads only in the block editor. Your settings (tools, button width and last colors) are stored in your WordPress user profile through the editor's own preferences, and are removed when the plugin is deleted.
+EstudoBiblico Quick Format Toolbar does not collect personal data, track visitors or call external services. It loads only in the block editor. Your settings (tools, button width and last colors) are stored in your WordPress user profile through the editor's own preferences, and are removed when the plugin is deleted.
 
 == License ==
 
@@ -101,8 +101,8 @@ This plugin is licensed under GPLv2 or later. Icons from @wordpress/icons, GPLv2
 
 == Upgrade Notice ==
 
-= 1.0.0 =
-First stable release, promoted after the RC4 package passed automated checks and manual testing in WordPress.
+= 1.0.1 =
+Renamed to EstudoBiblico Quick Format Toolbar; formatting across several blocks works the same in both selection directions.
 
 = 1.0.0-rc4 =
 Release candidate: text selected across several blocks is formatted the same whether the selection was dragged down or up.
@@ -115,8 +115,9 @@ Release candidate: a smaller toolbar focused on inline formatting; block tools a
 
 == Changelog ==
 
-= 1.0.0 =
-* First stable release, promoted after RC4 was validated in WordPress; no functional changes from RC4.
+= 1.0.1 =
+* Renamed to EstudoBiblico Quick Format Toolbar, with a matching text domain and preference scope.
+* First release submitted to the plugin directory; it carries every fix from the release candidates below.
 
 = 1.0.0-rc4 =
 * Formatting across several blocks now puts the two ends of the selection back in the order the blocks are read in, so dragging a selection upwards formats exactly the same text as dragging it down.
@@ -130,6 +131,7 @@ Release candidate: a smaller toolbar focused on inline formatting; block tools a
 * Bigger click area (24px) on the text color and highlight arrows; the arrows themselves look the same.
 * Special characters stay on the toolbar on narrow screens instead of folding into the "More formatting" menu, which cannot hold their grid.
 * Toolbar fitting no longer reads a coordinate of 0 as "not measured yet".
+* Tests for formatting across two and three blocks, dragged in both directions.
 
 = 1.0.0-rc2 =
 * Text color and highlight as split buttons: one click applies the last color, the arrow opens the theme palette. Same markup as the editor's own Highlight format; color values are validated.
