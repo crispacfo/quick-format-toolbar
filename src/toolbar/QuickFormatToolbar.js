@@ -47,17 +47,17 @@ const ALIGNMENTS = [
 	{
 		align: 'left',
 		icon: alignLeft,
-		label: __( 'Align text left', 'quick-format-toolbar' ),
+		label: __( 'Align text left', 'estudobiblico-quick-format-toolbar' ),
 	},
 	{
 		align: 'center',
 		icon: alignCenter,
-		label: __( 'Align text center', 'quick-format-toolbar' ),
+		label: __( 'Align text center', 'estudobiblico-quick-format-toolbar' ),
 	},
 	{
 		align: 'right',
 		icon: alignRight,
-		label: __( 'Align text right', 'quick-format-toolbar' ),
+		label: __( 'Align text right', 'estudobiblico-quick-format-toolbar' ),
 	},
 ];
 
@@ -331,7 +331,7 @@ export default function QuickFormatToolbar( {
 									icon={ moreHorizontal }
 									label={ __(
 										'More formatting',
-										'quick-format-toolbar'
+										'estudobiblico-quick-format-toolbar'
 									) }
 									controls={ menuControls }
 								/>

@@ -42,15 +42,18 @@ export function blockTypeOptions( blockState, actions ) {
 	return [
 		{
 			key: 'p',
-			title: __( 'Paragraph', 'quick-format-toolbar' ),
+			title: __( 'Paragraph', 'estudobiblico-quick-format-toolbar' ),
 			icon: paragraph,
 			isActive: blockState.name === 'core/paragraph',
 			onClick: actions.setParagraph,
 		},
 		...[ 1, 2, 3, 4, 5, 6 ].map( ( level ) => ( {
 			key: `h${ level }`,
-			/* translators: %d: heading level, 1 to 6. */
-			title: sprintf( __( 'Heading %d', 'quick-format-toolbar' ), level ),
+			title: sprintf(
+				/* translators: %d: heading level, 1 to 6. */
+				__( 'Heading %d', 'estudobiblico-quick-format-toolbar' ),
+				level
+			),
 			icon: HEADING_ICONS[ level ],
 			isActive:
 				blockState.name === 'core/heading' &&
@@ -66,7 +69,10 @@ export function BlockTypeControl( { blockState, actions } ) {
 	return (
 		<ToolbarDropdownMenu
 			icon={ active?.icon || paragraph }
-			label={ __( 'Paragraph and headings', 'quick-format-toolbar' ) }
+			label={ __(
+				'Paragraph and headings',
+				'estudobiblico-quick-format-toolbar'
+			) }
 			// menuitemradio: the current type is announced as checked.
 			controls={ options.map( ( { key, ...option } ) => ( {
 				...option,
@@ -81,7 +87,10 @@ function CharacterGrid( { onInsert } ) {
 		<div
 			className="qft-chars"
 			role="group"
-			aria-label={ __( 'Special characters', 'quick-format-toolbar' ) }
+			aria-label={ __(
+				'Special characters',
+				'estudobiblico-quick-format-toolbar'
+			) }
 		>
 			{ SPECIAL_CHARACTERS.map( ( character ) => (
 				<Button
@@ -90,7 +99,7 @@ function CharacterGrid( { onInsert } ) {
 					size="small"
 					label={ sprintf(
 						/* translators: %s: a character such as — or ©. */
-						__( 'Insert %s', 'quick-format-toolbar' ),
+						__( 'Insert %s', 'estudobiblico-quick-format-toolbar' ),
 						character
 					) }
 					onClick={ () => onInsert( character ) }

@@ -30,7 +30,7 @@ export const TOOLS = {
 		kind: 'format',
 		format: 'core/underline',
 		icon: formatUnderline,
-		label: __( 'Underline', 'quick-format-toolbar' ),
+		label: __( 'Underline', 'estudobiblico-quick-format-toolbar' ),
 	},
 	strikethrough: {
 		group: 'inline',
@@ -38,21 +38,21 @@ export const TOOLS = {
 		kind: 'format',
 		format: 'core/strikethrough',
 		icon: formatStrikethrough,
-		label: __( 'Strikethrough', 'quick-format-toolbar' ),
+		label: __( 'Strikethrough', 'estudobiblico-quick-format-toolbar' ),
 	},
 	textColor: {
 		group: 'inline',
 		section: 'color',
 		kind: 'split',
 		property: 'color',
-		label: __( 'Text color', 'quick-format-toolbar' ),
+		label: __( 'Text color', 'estudobiblico-quick-format-toolbar' ),
 	},
 	highlight: {
 		group: 'inline',
 		section: 'color',
 		kind: 'split',
 		property: 'backgroundColor',
-		label: __( 'Highlight', 'quick-format-toolbar' ),
+		label: __( 'Highlight', 'estudobiblico-quick-format-toolbar' ),
 	},
 	superscript: {
 		group: 'inline',
@@ -60,7 +60,7 @@ export const TOOLS = {
 		kind: 'format',
 		format: 'core/superscript',
 		icon: superscript,
-		label: __( 'Superscript', 'quick-format-toolbar' ),
+		label: __( 'Superscript', 'estudobiblico-quick-format-toolbar' ),
 	},
 	subscript: {
 		group: 'inline',
@@ -68,14 +68,14 @@ export const TOOLS = {
 		kind: 'format',
 		format: 'core/subscript',
 		icon: subscript,
-		label: __( 'Subscript', 'quick-format-toolbar' ),
+		label: __( 'Subscript', 'estudobiblico-quick-format-toolbar' ),
 	},
 	clearFormatting: {
 		group: 'inline',
 		section: 'clear',
 		kind: 'clear',
 		icon: clearFormattingIcon,
-		label: __( 'Clear formatting', 'quick-format-toolbar' ),
+		label: __( 'Clear formatting', 'estudobiblico-quick-format-toolbar' ),
 	},
 	code: {
 		group: 'inline',
@@ -83,20 +83,23 @@ export const TOOLS = {
 		kind: 'format',
 		format: 'core/code',
 		icon: code,
-		label: __( 'Inline code', 'quick-format-toolbar' ),
+		label: __( 'Inline code', 'estudobiblico-quick-format-toolbar' ),
 	},
 	specialCharacters: {
 		group: 'inline',
 		section: 'chars',
 		kind: 'chars',
 		icon: specialCharactersIcon,
-		label: __( 'Special characters', 'quick-format-toolbar' ),
+		label: __( 'Special characters', 'estudobiblico-quick-format-toolbar' ),
 	},
 	blockType: {
 		group: 'block',
 		section: 'block',
 		kind: 'blockType',
-		label: __( 'Paragraph and headings', 'quick-format-toolbar' ),
+		label: __(
+			'Paragraph and headings',
+			'estudobiblico-quick-format-toolbar'
+		),
 	},
 	bulletList: {
 		group: 'block',
@@ -104,7 +107,7 @@ export const TOOLS = {
 		kind: 'list',
 		ordered: false,
 		icon: formatListBullets,
-		label: __( 'Bulleted list', 'quick-format-toolbar' ),
+		label: __( 'Bulleted list', 'estudobiblico-quick-format-toolbar' ),
 	},
 	numberedList: {
 		group: 'block',
@@ -112,20 +115,20 @@ export const TOOLS = {
 		kind: 'list',
 		ordered: true,
 		icon: formatListNumbered,
-		label: __( 'Numbered list', 'quick-format-toolbar' ),
+		label: __( 'Numbered list', 'estudobiblico-quick-format-toolbar' ),
 	},
 	quote: {
 		group: 'block',
 		section: 'block',
 		kind: 'quote',
 		icon: quote,
-		label: __( 'Quote', 'quick-format-toolbar' ),
+		label: __( 'Quote', 'estudobiblico-quick-format-toolbar' ),
 	},
 	alignment: {
 		group: 'block',
 		section: 'align',
 		kind: 'alignment',
-		label: __( 'Text alignment', 'quick-format-toolbar' ),
+		label: __( 'Text alignment', 'estudobiblico-quick-format-toolbar' ),
 	},
 };
 

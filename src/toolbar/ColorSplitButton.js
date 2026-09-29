@@ -62,7 +62,7 @@ function CustomColor( { initial, onApply } ) {
 				size="compact"
 				onClick={ () => onApply( color ) }
 			>
-				{ __( 'Apply color', 'quick-format-toolbar' ) }
+				{ __( 'Apply color', 'estudobiblico-quick-format-toolbar' ) }
 			</Button>
 		</div>
 	);
@@ -84,10 +84,16 @@ export default function ColorSplitButton( {
 
 	const name = colorName( palette, current );
 	const mainLabel = isText
-		? /* translators: %s: color name or value. */
-			sprintf( __( 'Text color: %s', 'quick-format-toolbar' ), name )
-		: /* translators: %s: color name or value. */
-			sprintf( __( 'Highlight: %s', 'quick-format-toolbar' ), name );
+		? sprintf(
+				/* translators: %s: color name or value. */
+				__( 'Text color: %s', 'estudobiblico-quick-format-toolbar' ),
+				name
+			)
+		: sprintf(
+				/* translators: %s: color name or value. */
+				__( 'Highlight: %s', 'estudobiblico-quick-format-toolbar' ),
+				name
+			);
 
 	return (
 		<div className="qft-split">
@@ -116,11 +122,11 @@ export default function ColorSplitButton( {
 									isText
 										? __(
 												'Choose text color',
-												'quick-format-toolbar'
+												'estudobiblico-quick-format-toolbar'
 											)
 										: __(
 												'Choose highlight color',
-												'quick-format-toolbar'
+												'estudobiblico-quick-format-toolbar'
 											)
 								}
 								showTooltip
@@ -135,11 +141,11 @@ export default function ColorSplitButton( {
 									{ isText
 										? __(
 												'Text color',
-												'quick-format-toolbar'
+												'estudobiblico-quick-format-toolbar'
 											)
 										: __(
 												'Highlight',
-												'quick-format-toolbar'
+												'estudobiblico-quick-format-toolbar'
 											) }
 									{ onSelection && (
 										<ColorIndicator
@@ -167,7 +173,7 @@ export default function ColorSplitButton( {
 									>
 										{ __(
 											'Custom color…',
-											'quick-format-toolbar'
+											'estudobiblico-quick-format-toolbar'
 										) }
 									</Button>
 								) }

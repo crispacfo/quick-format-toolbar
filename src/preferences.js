@@ -4,7 +4,7 @@
 import { store as preferencesStore } from '@wordpress/preferences';
 import { useDispatch, useSelect, dispatch } from '@wordpress/data';
 
-export const SCOPE = 'quick-format-toolbar';
+export const SCOPE = 'estudobiblico-quick-format-toolbar';
 
 export const INSPECTOR_CONTROLS = [
 	'padding',

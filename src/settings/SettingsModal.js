@@ -22,12 +22,12 @@ import {
 import { TOOLS, TOOL_ORDER } from '../toolbar/tools';
 
 const INSPECTOR_LABELS = {
-	padding: __( 'Padding', 'quick-format-toolbar' ),
-	margin: __( 'Margin', 'quick-format-toolbar' ),
-	blockGap: __( 'Block spacing', 'quick-format-toolbar' ),
-	lineHeight: __( 'Line height', 'quick-format-toolbar' ),
-	border: __( 'Border', 'quick-format-toolbar' ),
-	radius: __( 'Radius', 'quick-format-toolbar' ),
+	padding: __( 'Padding', 'estudobiblico-quick-format-toolbar' ),
+	margin: __( 'Margin', 'estudobiblico-quick-format-toolbar' ),
+	blockGap: __( 'Block spacing', 'estudobiblico-quick-format-toolbar' ),
+	lineHeight: __( 'Line height', 'estudobiblico-quick-format-toolbar' ),
+	border: __( 'Border', 'estudobiblico-quick-format-toolbar' ),
+	radius: __( 'Radius', 'estudobiblico-quick-format-toolbar' ),
 };
 
 function toggle( list, item, on ) {
@@ -60,29 +60,44 @@ export default function SettingsModal( { onClose } ) {
 
 	return (
 		<Modal
-			title={ __( 'Quick Format Toolbar', 'quick-format-toolbar' ) }
+			title={ __(
+				'EstudoBiblico Quick Format Toolbar',
+				'estudobiblico-quick-format-toolbar'
+			) }
 			onRequestClose={ onClose }
 			className="qft-settings"
 			size="medium"
 		>
 			<RadioControl
-				label={ __( 'Button width', 'quick-format-toolbar' ) }
+				label={ __(
+					'Button width',
+					'estudobiblico-quick-format-toolbar'
+				) }
 				help={ __(
 					'The height comes from the editor’s toolbar; every button is clickable over its whole area.',
-					'quick-format-toolbar'
+					'estudobiblico-quick-format-toolbar'
 				) }
 				selected={ density }
 				options={ [
 					{
-						label: __( 'Compact', 'quick-format-toolbar' ),
+						label: __(
+							'Compact',
+							'estudobiblico-quick-format-toolbar'
+						),
 						value: 'compact',
 					},
 					{
-						label: __( 'Normal', 'quick-format-toolbar' ),
+						label: __(
+							'Normal',
+							'estudobiblico-quick-format-toolbar'
+						),
 						value: 'normal',
 					},
 					{
-						label: __( 'Comfortable', 'quick-format-toolbar' ),
+						label: __(
+							'Comfortable',
+							'estudobiblico-quick-format-toolbar'
+						),
 						value: 'comfortable',
 					},
 				] }
@@ -90,12 +105,12 @@ export default function SettingsModal( { onClose } ) {
 			/>
 
 			<h2 className="qft-settings__heading">
-				{ __( 'Text tools', 'quick-format-toolbar' ) }
+				{ __( 'Text tools', 'estudobiblico-quick-format-toolbar' ) }
 			</h2>
 			<p className="qft-settings__help">
 				{ __(
 					'Shown after the editor’s own bold, italic and link buttons. To keep the toolbar at the top of the screen, use the editor’s “Top toolbar” option.',
-					'quick-format-toolbar'
+					'estudobiblico-quick-format-toolbar'
 				) }
 			</p>
 			<ToolChecklist
@@ -105,12 +120,12 @@ export default function SettingsModal( { onClose } ) {
 			/>
 
 			<h2 className="qft-settings__heading">
-				{ __( 'Block tools', 'quick-format-toolbar' ) }
+				{ __( 'Block tools', 'estudobiblico-quick-format-toolbar' ) }
 			</h2>
 			<p className="qft-settings__help">
 				{ __(
 					'The editor already offers these in its own menus; turn them on for one-click access.',
-					'quick-format-toolbar'
+					'estudobiblico-quick-format-toolbar'
 				) }
 			</p>
 			<ToolChecklist
@@ -120,14 +135,17 @@ export default function SettingsModal( { onClose } ) {
 			/>
 
 			<h2 className="qft-settings__heading">
-				{ __( 'Experimental', 'quick-format-toolbar' ) }
+				{ __( 'Experimental', 'estudobiblico-quick-format-toolbar' ) }
 			</h2>
 			<CheckboxControl
 				__nextHasNoMarginBottom
-				label={ __( 'Inspector Shortcuts', 'quick-format-toolbar' ) }
+				label={ __(
+					'Inspector Shortcuts',
+					'estudobiblico-quick-format-toolbar'
+				) }
 				help={ __(
 					'Shows some dimension, typography and border controls directly in the sidebar, for blocks that support them, instead of behind “+”. Uses an experimental editor feature; takes effect after reloading the editor.',
-					'quick-format-toolbar'
+					'estudobiblico-quick-format-toolbar'
 				) }
 				checked={ inspectorEnabled }
 				onChange={ setInspectorEnabled }
@@ -157,10 +175,13 @@ export default function SettingsModal( { onClose } ) {
 						)
 					}
 				>
-					{ __( 'Reset to defaults', 'quick-format-toolbar' ) }
+					{ __(
+						'Reset to defaults',
+						'estudobiblico-quick-format-toolbar'
+					) }
 				</Button>
 				<Button variant="primary" onClick={ onClose }>
-					{ __( 'Done', 'quick-format-toolbar' ) }
+					{ __( 'Done', 'estudobiblico-quick-format-toolbar' ) }
 				</Button>
 			</div>
 		</Modal>
